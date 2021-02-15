@@ -16,7 +16,7 @@ namespace PE8_7
         //Purpose: Accept a string from the user and print it in reverse
         //Restrictions: none
         static void Main(string[] args)
-        {
+        { 
             //establish and initialize variables
             string word = "";
             string reverse = "";
