@@ -9,53 +9,49 @@ namespace PE8_5
     //Class: Program
     //Author: Allison Maus
     //Purpose: PE8
-    //Restritions:
+    //Restritions: none
     class Program
     {
         //Method: Main
-        //Purpose:
-        //Restrictions:
+        //Purpose: Create an array of x,y and z calculations
+        //Restrictions: I don't think it works properly, I used a two dimensional array
         static void Main(string[] args)
         {
-            /*Given the formula z = 3y2 + 2x - 1 write a console application to 
-             * calculate z for the following ranges of x and y:
-            -1 <= x <= 1 in 0.1 increments
-            1 <= y <= 4 in 0.1 increments
-
-           Use a 3 - dimensional array double[,,] to store the values of x, y and z for each computation. */
-
-            
+            //declare and initialize variables
             double x = -1;
             double y = 1;
             double z = 0;
-            double num1 = 0;
-            double num2 = 0;
-            double[,] funcVal = new double[40,3];
+           
+            //create array to store doubles
+            double[,] funcVal = new double[30,3];
+            //increments x value in array
             int xcntr = 0;
+            //for valid range of x
             for (x = -1; x<=1; x += 0.1)
             {
+
+                //assign x to array
                 funcVal[xcntr,0] = x;
-                num1 = ((2*x) - 1);
-                Console.Write("x:"+funcVal[xcntr, 0]);
+                //increment xcntr
                 xcntr++;
 
-                for (y = 1; y <= 4; y += 0.1)
-                {
-                    
-                    funcVal[xcntr, 1] = y;
-                    num2 = Math.Pow((3 * y), 2);
-
-                    z = num1 + num2;
-
-                    funcVal[xcntr, 2] = z;
-                    Console.Write("y:"+funcVal[xcntr, 1]);
-                    xcntr++;
-                }
-
             }
-            
 
-
+            //for valid range of y
+            for (y = 1; y <= 4; y += 0.1)
+            {
+                //reset x value incrementor
+                xcntr = 0;
+                //assign y to array
+                funcVal[xcntr, 1] = y;
+                
+                //calculate z
+                z = Math.Pow((3 * y), 2) + ((2 * x) - 1);
+                //assign z to array
+                funcVal[xcntr, 2] = z;
+                //increment xcntr
+                xcntr++;
+            }
 
         }
     }
