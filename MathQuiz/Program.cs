@@ -5,7 +5,7 @@ using System;
     //Author: Allison Maus
     //Purpose: Question 1, Unit 1 Test
     //Restrictions: none
-class Program
+static class Program
 {
     //Method: Main
     //Purpose: To enhance the math quiz application to include division
