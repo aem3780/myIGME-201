@@ -7,7 +7,7 @@ namespace SentenceSorter
     //Purpose: Question 2 Unit 1 Test
     //Restrictions: none
 
-    class Program
+    static class Program
     {
         //Method: Main
         //Purpose: Sort a sentence into an array of words in ascending and descending order
