@@ -10,7 +10,7 @@ namespace SalaryProgram
     //Author: Allison Maus
     //Purpose: Unit Test 1 Question 12
     //Restrictions: None
-    class Program
+    static class Program
     {
         //Method: Main
         //Purpose:To find out if the user recieved a raise or not
