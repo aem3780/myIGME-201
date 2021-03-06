@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace PE12Q3
 {
-    //Class: Program
-    //Author: Allison Maus
-    //Purpose: PE11 Q3
-    //Restrictions: none
-    class Program
+    //Class: Program  
+    //Author: Allison Maus 
+    //Purpose: PE12Q3 
+    //Restrictions: none 
+    class Program 
     {
-        //Method: Main
-        //Purpose: instantiate a MyDerivedClass object and output the string from 
-        //its GetString method
+        //Method: Main 
+        //Purpose: instantiate a MyDerivedClass object and output the string from  
+        //its GetString method 
         static void Main(string[] args)
         {
             //create new MyDerivedClass object
@@ -34,13 +34,13 @@ namespace PE12Q3
         public class MyClass
         {
             //store string in the private string myString
-            private string myString = "word";
+            private string myString = "word";  
 
             //Method: GetString
             //Purpose: virtual method that returns the value of the private string myString
             public virtual string GetString()
             {
-                return myString;
+                return myString; 
             }
         }
 
