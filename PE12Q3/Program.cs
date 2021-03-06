@@ -13,7 +13,7 @@ namespace PE12Q3
     class Program 
     {
         //Method: Main 
-        //Purpose: instantiate a MyDerivedClass object and output the string from  
+        //Purpose: Instantiate a MyDerivedClass object and output the string from  
         //its GetString method 
         static void Main(string[] args)
         {
