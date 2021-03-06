@@ -135,6 +135,7 @@ namespace CourseLib
         public string description;
         public string teacherEmail;
         public Schedule schedule;
+        //constructor Course
         public Course(string courseCode, string description)
         {
             this.courseCode = courseCode;
