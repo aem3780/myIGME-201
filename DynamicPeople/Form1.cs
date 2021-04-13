@@ -71,7 +71,7 @@ namespace DynamicPeople
                     AddPanel(keyValuePair.Value);
                 }
             }
-
+           
             studentButton.Text = this.flowLayoutPanel1.Controls.Count.ToString();
         }
 
