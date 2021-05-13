@@ -15,6 +15,7 @@ namespace ArcherLai_FinalProject
         public TigerMatch()
         {
             InitializeComponent();
+            //ArcherLai add
             okButton.Click += new EventHandler(OkButton__Click);
 
             //Allie Maus
@@ -37,17 +38,21 @@ namespace ArcherLai_FinalProject
             string password = passwordText.Text;
             string substring = "@rit.edu";
 
-            if(user.Contains(substring)== true)
+            if (user.Contains(substring) == true)
             {
-                if(password != "")
+                if (password != "")
                 {
+                    //Archer Add
                     Form4 oFrm4 = new Form4();
                     oFrm4.Show();
+                    //Archer Add
+                    this.Hide();
                 }
             }
 
 
-            
+
         }
     }
 }
+

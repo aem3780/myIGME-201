@@ -102,7 +102,6 @@ namespace ArcherLai_FinalProject
             this.submitButton.TabIndex = 6;
             this.submitButton.Text = "Submit";
             this.submitButton.UseVisualStyleBackColor = false;
-            this.submitButton.Click += new System.EventHandler(this.SubmitButton__Click);
             // 
             // matchButton
             // 

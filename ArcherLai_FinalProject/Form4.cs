@@ -15,7 +15,8 @@ namespace ArcherLai_FinalProject
         public Form4()
         {
             InitializeComponent();
-
+            //ArcherLai
+            //add three button events
             submitButton.Click += new EventHandler(SubmitButton__Click);
             homeButton.Click += new EventHandler(HomeButton__Click);
             matchButton.Click += new EventHandler(MatchButton__Click);
@@ -25,11 +26,14 @@ namespace ArcherLai_FinalProject
 
         }
 
+        //ArcherLai
+        //Added these
         private void SubmitButton__Click(object sender, EventArgs e)
         {
 
             Form2 oFrm2 = new Form2();
             oFrm2.Show();
+            this.Hide();
         }
         //Allie Maus
         //Added these
@@ -37,6 +41,8 @@ namespace ArcherLai_FinalProject
         {
             Form2 oFrm2 = new Form2();
             oFrm2.Show();
+            //ArcherAdd
+            this.Hide();
         }
         //Allie Maus
         //Added these
@@ -44,6 +50,8 @@ namespace ArcherLai_FinalProject
         {
             Form3 oFrm3 = new Form3();
             oFrm3.Show();
+            //ArcherAdd
+            this.Hide();
         }
     }
 }

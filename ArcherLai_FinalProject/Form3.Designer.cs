@@ -34,6 +34,8 @@ namespace ArcherLai_FinalProject
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.compatibilityScore = new System.Windows.Forms.Label();
+            this.compatabilityLabel = new System.Windows.Forms.Label();
             this.roommateHobbies2 = new System.Windows.Forms.Label();
             this.roommatePets = new System.Windows.Forms.Label();
             this.roommateStudy = new System.Windows.Forms.Label();
@@ -68,8 +70,6 @@ namespace ArcherLai_FinalProject
             this.matchButton = new System.Windows.Forms.Button();
             this.profileButton = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
-            this.compatabilityLabel = new System.Windows.Forms.Label();
-            this.compatibilityScore = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.roommatePictureBox)).BeginInit();
@@ -124,7 +124,6 @@ namespace ArcherLai_FinalProject
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(200, 260);
             this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // groupBox2
             // 
@@ -167,6 +166,26 @@ namespace ArcherLai_FinalProject
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Roommate Profile";
+            // 
+            // compatibilityScore
+            // 
+            this.compatibilityScore.AutoSize = true;
+            this.compatibilityScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.compatibilityScore.Location = new System.Drawing.Point(393, 71);
+            this.compatibilityScore.Name = "compatibilityScore";
+            this.compatibilityScore.Size = new System.Drawing.Size(41, 20);
+            this.compatibilityScore.TabIndex = 21;
+            this.compatibilityScore.Text = "95%";
+            // 
+            // compatabilityLabel
+            // 
+            this.compatabilityLabel.AutoSize = true;
+            this.compatabilityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.compatabilityLabel.Location = new System.Drawing.Point(227, 71);
+            this.compatabilityLabel.Name = "compatabilityLabel";
+            this.compatabilityLabel.Size = new System.Drawing.Size(122, 20);
+            this.compatabilityLabel.TabIndex = 21;
+            this.compatabilityLabel.Text = "Compatability:";
             // 
             // roommateHobbies2
             // 
@@ -505,26 +524,6 @@ namespace ArcherLai_FinalProject
             this.homeButton.TabIndex = 18;
             this.homeButton.Text = "Home";
             this.homeButton.UseVisualStyleBackColor = false;
-            // 
-            // compatabilityLabel
-            // 
-            this.compatabilityLabel.AutoSize = true;
-            this.compatabilityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.compatabilityLabel.Location = new System.Drawing.Point(227, 71);
-            this.compatabilityLabel.Name = "compatabilityLabel";
-            this.compatabilityLabel.Size = new System.Drawing.Size(122, 20);
-            this.compatabilityLabel.TabIndex = 21;
-            this.compatabilityLabel.Text = "Compatability:";
-            // 
-            // compatibilityScore
-            // 
-            this.compatibilityScore.AutoSize = true;
-            this.compatibilityScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.compatibilityScore.Location = new System.Drawing.Point(393, 71);
-            this.compatibilityScore.Name = "compatibilityScore";
-            this.compatibilityScore.Size = new System.Drawing.Size(41, 20);
-            this.compatibilityScore.TabIndex = 21;
-            this.compatibilityScore.Text = "95%";
             // 
             // Form3
             // 

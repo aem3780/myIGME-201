@@ -15,6 +15,7 @@ namespace ArcherLai_FinalProject
         public Form3()
         {
             InitializeComponent();
+            //ArcherAdd
             listBox1.Visible = false;
             button1.Click += new EventHandler(Button1__Click);
             //Allie Maus 
@@ -43,7 +44,7 @@ namespace ArcherLai_FinalProject
             roommateYear.Visible = false;
             roommatePictureBox.Visible = false;
             compatibilityScore.Visible = false;
-            
+
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -78,6 +79,9 @@ namespace ArcherLai_FinalProject
         {
             Form2 oFrm2 = new Form2();
             oFrm2.Show();
+
+            //ArcherAdd
+            this.Hide();
         }
 
         //Allie Maus
@@ -86,11 +90,9 @@ namespace ArcherLai_FinalProject
         {
             Form4 oFrm4 = new Form4();
             oFrm4.Show();
-        }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            //ArcherAdd
+            this.Hide();
         }
     }
 }
